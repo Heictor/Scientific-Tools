@@ -42,3 +42,4 @@ ax = fig.add_subplot(111, projection='3d')
 ax.scatter(x, y, z, s=m);
 ax.scatter(cgx, cgy, cgz, color='k', marker='+', s=1e4);
 plt.title('3 Dimensional Center of Gravity');
+plt.show()
