@@ -28,18 +28,18 @@ print(y)
 z = np.random.randint(0,200,n)
 print(z)
 
-cgx = np.sum(x*m)/np.sum(m)
-print('The center of mass in x is %f' % cgx)
+mcx = np.sum(x*m)/np.sum(m)
+print('The center of mass in x is: ',mcx)
 
-cgy = np.sum(y*m)/np.sum(m)
-print('The center of mass in y is %f' % cgy)
+mcy = np.sum(y*m)/np.sum(m)
+print('The center of mass in y is: ',mcy)
 
-cgz = np.sum(z*m)/np.sum(m)
-print('The center of mass is %f' % cgz)
+mcz = np.sum(z*m)/np.sum(m)
+print('The center of mass in z is: ',mcz)
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(x, y, z, s=m);
-ax.scatter(cgx, cgy, cgz, color='k', marker='+', s=1e4);
+ax.scatter(mcx, mcy, mcz, color='k', marker='+', s=1e4);
 plt.title('3 Dimensional Center of Gravity');
 plt.show()
