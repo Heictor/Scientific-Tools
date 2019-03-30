@@ -19,13 +19,13 @@ n=int(input('Insert the number of particles: ')) #Number of particles
 m = np.random.randint(1,200, n)
 print(m)
 
-x = np.random.randint(0, 200, n)
+x = np.random.randint(0, 2000, n)
 print(x)
 
-y = np.random.randint(0,200,n)
+y = np.random.randint(0,2000,n)
 print(y)
 
-z = np.random.randint(0,200,n)
+z = np.random.randint(0,2000,n)
 print(z)
 
 mcx = np.sum(x*m)/np.sum(m)
